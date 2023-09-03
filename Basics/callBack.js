@@ -59,7 +59,7 @@ console.log(number);
 
 const checkNumber = (num) => num % 2 != 0 ? "the number is: " + num : num + " is not Odd";
 
-//this below the HigherOrder function which accept the callback as parameter
+//this below is the HigherOrder function which accept the callback as parameter
 
 const printRes = (value, check) => {
 

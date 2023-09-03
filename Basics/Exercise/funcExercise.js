@@ -45,9 +45,6 @@ z("World");
 // 	console.log("Ciao");
 // }
 
-
-
-
 // const toUpper = (string) => string.toUpperCase();
 // console.log(toUpper("ciao"));
 
@@ -64,6 +61,10 @@ z("World");
 // }
 
 // greetEng();
+
+
+
+// Hoisting
 hoist();
 
 console.log(a);
