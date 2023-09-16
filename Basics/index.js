@@ -26,3 +26,11 @@ const check = () => {
 
 let btn = document.getElementById('myBtn');
 btn.addEventListener('click', check);
+
+
+
+let z = document.getElementById('myBtn');
+z.addEventListener('click', setTimeout(() => {
+    z.classList.add('color');
+
+}, 2000));

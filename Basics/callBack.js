@@ -66,4 +66,4 @@ const printRes = (value, check) => {
     console.log(check(value));
 }
 
-//console.log(printRes(number, checkNumber));
+console.log(printRes(number, checkNumber));
