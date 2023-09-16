@@ -1,4 +1,4 @@
-//this is a function which accept an input parameter that will be returned toUpperCase 
+//this is a function which accept a string as parameter that will be returned toUpperCase 
 
 // function toUpper(x) {
 //     return x.toUpperCase();
@@ -50,7 +50,7 @@
 
 
 const generate = () => {
-    return Math.ceil(Math.random(100) * 1000);
+    return Math.ceil(Math.random() * 10);
 }
 let number = generate();
 console.log(number);
@@ -66,4 +66,4 @@ const printRes = (value, check) => {
     console.log(check(value));
 }
 
-console.log(printRes(number, checkNumber));
+//console.log(printRes(number, checkNumber));

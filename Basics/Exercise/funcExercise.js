@@ -65,14 +65,14 @@ z("World");
 
 
 // Hoisting
-hoist();
+// hoist();
 
-console.log(a);
+// console.log(a);
 
-function hoist() {
-    a = 20;
-    var b = 100;
-}
+// function hoist() {
+//     a = 20;
+//     var b = 100;
+// }
 
 
 /* 
