@@ -19,7 +19,7 @@ function checkBool(x) {
 
 const dayNumber = () => {
     let z = document.getElementById("myValue").value;
-    y = parseInt(z);
+    //y = parseInt(z);
 
     switch (checkBool(y)) {
         case 1:
