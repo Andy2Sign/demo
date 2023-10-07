@@ -22,11 +22,11 @@ let myObject = {
     random: "bar",
     func: function() {
         let self = this;
-        console.log("outer func: this.random = " + this.random); // here this refers to myObject
-        console.log("outer func: self.random = " + self.random); // here self refers to this which refers to myObject 
+        console.log(`outer func: this.random = ${this.random}`); // here this refers to myObject
+        console.log(`outer func: self.random =  ${self.random}`); // here self refers to this which refers to myObject 
         (function() {
-            console.log("inner func: this.random = " + this.random); // here this doesn't refers anymore to myObject
-            console.log("inner func: self.random = " + self.random); // self is still referring to this which refers to myObject
+            console.log(`inner func: this.random = ${this.random}`); // here this doesn't refers anymore to myObject
+            console.log(`inner func: self.random = ${self.random}`); // self is still referring to this which refers to myObject
         }())
     }
 };
