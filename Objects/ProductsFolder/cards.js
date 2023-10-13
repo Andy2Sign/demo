@@ -1,14 +1,31 @@
-import { data } from './module.js';
+// import { data } from './module.js';
 
 
-document.addEventListener("DOMContentLoaded", function() {
+const data = [{
+        id: 1,
+        firstName: 'Andrea',
+        secondName: 'Bisegna',
+        city: 'Lugano'
+    },
+    {
+        id: 2,
+        firstName: 'Alex',
+        secondName: 'Cela Camba',
+        city: 'Basel'
+    }
+];
 
+let btn = document.getElementById('btn');
+
+btn.addEventListener("click", function() {
+    console.log("Hello world")
     let contentDiv = document.getElementById("content");
-    //let template = document.createElement("template");
+
 
     data.forEach(dataItem => {
-        let element = document.createElement('p');
-        element.innerHTML = newPara(dataItem.firstName);
+        // console.log(`<li>${dataItem.firstName}</li>`)
+        let element = document.createElement('li');
+        element.textContent = `Candidato ${dataItem.id}: ${dataItem.firstName + " " + dataItem.secondName}`; //newPara(dataItem.firstName);
         contentDiv.appendChild(element);
     });
 
