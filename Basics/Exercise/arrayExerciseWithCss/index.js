@@ -24,17 +24,3 @@ btn.addEventListener('click', () => {
         divContainer.appendChild(elementList);
     })
 })
-
-
-
-// const display = () => {
-//     //numbers.filter(checkPariDispari)
-
-//     numbers.map((el) => `<li>${checkPariDispari(el)}</li>`)
-
-
-
-//     // document.getElementById('myId').innerHTML = numbers.forEach((el) => {
-//     //     el + " helo";
-//     // })
-// }
