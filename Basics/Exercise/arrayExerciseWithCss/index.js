@@ -15,19 +15,16 @@ const checkPariDispari = (num) => {
 let btn = document.getElementById('btn');
 
 btn.addEventListener('click', () => {
-    console.log('Hello World');
     let divContainer = document.getElementById("contentDiv");
     numbers.forEach(item => {
         let elementList = document.createElement('li');
         let filtered = checkPariDispari(item);
         //filtered == 'è Pari' ? elementList.classList.add('pari') : elementList.classList.add('dispari');
-        if (filtered == 'è Pari') {
-            elementList.classList.add('pari')
-        }
         elementList.textContent = filtered;
         divContainer.appendChild(elementList);
     })
 })
+
 
 
 // const display = () => {
