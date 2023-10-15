@@ -12,15 +12,24 @@ const checkPariDispari = (num) => {
     }
 };
 
-let btn = document.getElementById('btn');
+let btn = document.getElementById("btn");
 
-btn.addEventListener('click', () => {
+btn.addEventListener("click", () => {
     let divContainer = document.getElementById("contentDiv");
-    numbers.forEach(item => {
-        let elementList = document.createElement('li');
-        let filtered = checkPariDispari(item);
-        //filtered == 'è Pari' ? elementList.classList.add('pari') : elementList.classList.add('dispari');
-        elementList.textContent = filtered;
+    numbers.forEach((item) => {
+        let elementList = document.createElement("li");
+        //var items = document.getElementById("oddEven").querySelectorAll("li");
+        // let filtered = checkPariDispari(item);
+        // let intNum = parseInt(filtered);
+        item % 2 == 0 ?
+            elementList.classList.add("pari") :
+            elementList.classList.add("dispari");
+        elementList.textContent = item;
+        //elementList.textContent = filtered;
+
+        //elementList == "è Pari" ? elementList.classList.add("pari") : elementList.classList.add("dispari");
+
+
         divContainer.appendChild(elementList);
-    })
-})
+    });
+});
