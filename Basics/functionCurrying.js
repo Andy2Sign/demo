@@ -48,3 +48,4 @@ let party = (x) => {
 
 let checkNoAlc = party(12);
 console.log(checkNoAlc(3));
+

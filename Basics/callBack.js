@@ -4,7 +4,7 @@
 //     return x.toUpperCase();
 // }
 
-//this is another function which accpet two input parameters: y, formatter
+//this is another function which accept two input parameters: y, formatter
 //this will logs the first input passed as parameter into the second input
 // it means the second inout is a function
 //A function can accept as parameter another function previously declared
@@ -22,21 +22,23 @@
 
 // console.log(res)
 
+//---- Here below is to learn what is an HigherOrder Function
+//---- An HigherOrder function is the function which accept the callback as parameter
+//---- The HigherOrder function is always called first
 
+/*  const callback = () => {
+     console.log("Coming from callback");
+ }
 
-// const callback = () => {
-//     console.log("Coming from callback");
-// }
+ const higherOrder = (func) => {
+     console.log("About to call callback");
 
-// const higherOrder = (func) => {
-//     console.log("About to call callback");
+     func() //Callback function is invoked
 
-//     func() //Callback function is invoked
+     console.log("Callback has been invoked")
+ }
 
-//     console.log("Callback has been invoked")
-// }
-
-// higherOrder(callback);
+ higherOrder(callback); */
 
 // result is:
 
@@ -49,7 +51,7 @@
 // we need to print this number in the console only if it is Odd trhough an higerOrder function
 
 
-const generate = () => {
+/*const generate = () => {
     return Math.ceil(Math.random() * 10);
 }
 let number = generate();
@@ -64,6 +66,6 @@ const checkNumber = (num) => num % 2 != 0 ? "the number is: " + num : num + " is
 const printRes = (value, check) => {
 
     console.log(check(value));
-}
+}*/
 
 //console.log(printRes(number, checkNumber));
