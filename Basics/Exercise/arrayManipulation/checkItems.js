@@ -16,17 +16,16 @@ console.log(list);
 
 const operation = (numbers) => {
     let sortedArray = [];
-    let count = 0;
     for (let i = 0; i < numbers.length; i++) {
         for (let j = i + 1; j < numbers.length; j++) {
             let temp = 0;
-            if (numbers[i] > numbers[j]){
+            if (numbers[i] > numbers[j]){ // if i is greater than j
                 console.log('questa è i ' + numbers[i]);
                 console.log('questa è j '+ numbers[j]);
-                temp = numbers[i];
+                temp = numbers[i]; // we store i in the temp variable
                 console.log('questo è temp ' + temp);
-                numbers[i] = numbers[j];
-                numbers[j] = temp
+                numbers[i] = numbers[j]; // we move i at the j position (in case is greater)
+                numbers[j] = temp // j takes the value stored previously in the temp variable - so we have the values sorted in ascending order
             }            
         }
         sortedArray.push(numbers[i])
